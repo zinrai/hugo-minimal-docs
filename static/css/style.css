@@ -1,0 +1,151 @@
+:root {
+    --main-color: #333;
+    --accent-color: #2c3e50;
+    --link-color: #3498db;
+    --bg-color: #fff;
+    --light-gray: #f5f5f5;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header h1 a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem 0 1rem;
+    color: var(--accent-color);
+}
+
+p, ul, ol {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.document-links ul {
+    list-style: none;
+}
+
+.document-links li {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+}
+
+.document-links a {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.document-links .description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+article {
+    line-height: 1.7;
+}
+
+article header {
+    margin-bottom: 2rem;
+}
+
+article .date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+article .content {
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+article h3 {
+    margin-top: 1.5rem;
+}
+
+article ul, article ol {
+    margin-left: 1.5rem;
+}
+
+article code {
+    padding: 0.2rem 0.4rem;
+    background-color: var(--light-gray);
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+article pre {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+article pre code {
+    padding: 0;
+    background-color: transparent;
+}
+
+.back-link {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}

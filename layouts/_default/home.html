@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <div class="home-content">
+        <div class="introduction">
+            {{ .Content }}
+        </div>
+
+        <div class="document-links">
+            <ul>
+                {{ range where .Site.RegularPages "Section" "" }}
+                    <li>
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        {{ if .Description }}
+                        <p class="description">{{ .Description }}</p>
+                        {{ end }}
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+{{ end }}

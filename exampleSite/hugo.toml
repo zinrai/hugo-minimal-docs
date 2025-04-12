@@ -1,0 +1,19 @@
+baseURL = '/'
+relativeurls = true
+languageCode = "ja-jp"
+title = "Documents"
+theme = "minimal-docs"
+
+[permalinks]
+  "/" = "/:filename/"
+
+[params]
+  description = "Documents"
+  author = "zinrai"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNos = false
+    style = "monokailight"
